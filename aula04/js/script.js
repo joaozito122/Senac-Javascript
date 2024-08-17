@@ -13,6 +13,8 @@ function abrirfoto(){
     //O primeiro parâmetro do comando window.open é a url,ou seja, a página que será aberta.
     //No nosso caso, passamos o caminho da imagem deve abrir.
     //Escolhemos para abrir em uma guia chamada "exibir", mas se vc quiser, é possivel abrir na guia "_blank".
-    //Assim o navegador irá abrir uma nova guia para cada página criada.
+    //Assim o navegador irá abrir uma nova guia para cada página criada.  
+
+    
     window.open("img/" + foto.value + ".jpg", "exibir")
 }
