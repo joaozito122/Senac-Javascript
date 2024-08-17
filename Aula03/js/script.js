@@ -23,3 +23,34 @@ Caso não selecione nenhuma das alternativas será apresentado uma mensagem ao u
     }
     valor_pagar.value = "R$" + resultado
 }
+
+function pagamento(){
+    let forma = document.getElementById("forma_pagamento")
+    if(forma.value=="cartão"){
+        document.getElementById("parcelas").style.display="block"
+    }
+    else{
+        document.getElementById("parcelas").style.display="none"
+    }
+}
+
+function parcelamento() {
+    let qtd_par = document.getElementById("qtd_par")
+    let valor_par = document.getElementById("valor_par")
+    let valor_pagar = document.getElementById("valor_pagar")
+
+    switch(qtd_par.value){
+        case"1":
+            valor_par.value = valor_pagar.value.substring(2,10)    
+            break
+        case"2":
+        valor_par.value = valor_pagar.value.substring(2,10) / 2
+            break
+        case"3":
+        valor_par.value = valor_pagar.value.substring(2,10) / 3
+            break
+        case"4":
+        valor_par.value = valor_pagar.value.substring(2,10) / 4
+            break
+    }
+}
