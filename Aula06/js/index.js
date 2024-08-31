@@ -78,6 +78,5 @@ function array6(){
             }
         }
     }
-}    
-        console.log(a3)
-        document.getElementById("saida").innerHTML = a3
+    document.getElementById("saida").innerHTML = a3
+}
