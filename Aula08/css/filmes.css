@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "google fonts";
+    src: url("./Fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf");
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+div#lista {
+    display: flex;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.filme{
+    width: 18.1%;
+    margin: 10px;
+    border: 1px solid silver;
+    border-radius: 10px;
+    box-shadow: 0 0 10px silver;
+    transition: ease 0.7s;
+    background-color: #fff;
+}
+
+
+.filme img{
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.filme:hover{
+    transform: scale(1.2);
+    z-index: 10000;
+}
+
+.votos{
+    background-color:   darkblue;
+    border: 1px solid #fff;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10pt;
+    position: relative;
+    left: 10px;
+    top: -20px;
+}
+
+h2{
+    font-family: "google fonts";
+    font-size: 15pt;
+    font-weight: bold;
+    margin: 5px;
+}
+
+p{
+    font-family: "google fonts";
+    margin: 10px;
+}
+
+#info{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 20000;
+}
+
+#info-filme{
+    width: 900px;
+    height: 610px;
+    background-color: white;
+    display: flex;
+
+}
+
+#fechar{
+    text-decoration: none;
+    color: black;
+    font-size: 30pt;
+    font-weight: bold;
+    position: relative;
+    left: 850px;
+    top: 10px;
+    width: 45px;
+    height: 45px;
+}
+
+#poster, #detalhe{
+    flex: 1;
+
+}
+#poster img{
+    width: 100%;
+    height: 610px;
+}
+
+#detalhe{
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: "google fonts";
+}
