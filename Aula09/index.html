@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <h1>Gerenciar clientes</h1>
+        <hr>
+        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+           Cadastrar
+        </a>
+        <hr>
+        <h3>Clientes cadastrados</h3>
+        <div id="lista"></div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Cadastrar cliente</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form onsubmit="return false">
+                        <input class="col-12" type="text" id="txtnome" placeholder="Nome completo">
+                        <input class="col-12" type="text" id="txtemail" placeholder="E-mail">
+                        <input class="col-12" type="text" id="txtendereco" placeholder="Endereço">
+                        <input class="col-5" type="text" id="txttelefone" placeholder="Telefone">
+                        <input class="col-5" type="text" id="txtidade" value="18">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-primary" id="salvar">Salvar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/gerenciar.js"></script>
+</body>
+</html>
