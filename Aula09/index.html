@@ -11,12 +11,12 @@
     <div class="container-fluid">
         <h1>Gerenciar clientes</h1>
         <hr>
-        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <a href="#" id="btncadastrar" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
            Cadastrar
         </a>
         <hr>
         <h3>Clientes cadastrados</h3>
-        <div id="lista"></div>
+        <div id="lista" class="container row col-10"></div>
 
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -37,6 +37,7 @@
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                   <button type="button" class="btn btn-primary" id="salvar">Salvar</button>
+                  <button type="button" class="btn btn-primary" id="btnatualizar">Atualizar</button>
                 </div>
               </div>
             </div>
