@@ -1,0 +1,24 @@
+#imagem{
+    background-image: url(https://forbes.com.br/wp-content/uploads/2023/09/Melhores-Fotos-Espaciais.webp);
+    width: 300px;
+    height: 350px;
+    position: relative;
+}
+#sombra{
+    position: fixed;
+    background-color: white;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease 2s;
+}
+.quadro{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}

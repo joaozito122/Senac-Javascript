@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <link rel="stylesheet" href="Css/jquery-ui.min.css">
+    <link rel="stylesheet" href="Css/jquery-ui.theme.min.css">
+</head>
+<body>
+   <!-- <div id="imagem" class="ui-widget-content">   
+        <img style="width: 100px ;"src="https://forbes.com.br/wp-content/uploads/2023/09/Melhores-Fotos-Espaciais.webp" alt="">
+    </div> -->
+    <nav style="width: 200px;">
+        <ul id="menu">
+            <li><a href="#">Cliente</a></li>
+            <li><a href="#">Produto</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><div>Unidades</div>
+                <ul>
+                    <li><a href="#">Leste</a></li>
+                    <li><a href="#">Norte</a></li>
+                    <li><a href="#">Sul</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+
+
+    <div id="caixa">
+        <h3>Clientes</h3>
+        <div>
+        <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellendus, magnam debitis provident qui blanditiis quis explicabo nihil alias nobis. Id perspiciatis cupiditate necessitatibus labore saepe porro. Nihil, tempore odit?</span><span>Ullam, dolorum quas. Voluptatem expedita vitae minus ipsa ad omnis eum saepe ex, eligendi atque sit, hic temporibus cum explicabo veritatis, molestias eos ab sapiente aperiam quos. Excepturi, eius et?</span><span>Animi atque temporibus sint magni nam iusto quia fuga repellendus veniam ipsum ab ex doloribus nobis aspernatur quasi consectetur libero, numquam hic reprehenderit esse. Iure placeat dignissimos facilis exercitationem ad.</span></p>
+        <p><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa recusandae qui facilis provident vero porro sit odit quidem, delectus assumenda doloribus tempora est ex earum, impedit deleniti! Soluta, voluptatem omnis!</span><span>Voluptatibus deserunt, maiores sunt tenetur culpa molestias officiis deleniti totam dolore ipsa harum perferendis sed dolores ut atque, officia maxime beatae voluptatum! Minus quisquam quidem, voluptatem error ducimus ex ipsa.</span><span>Id sed laboriosam laudantium error, ut excepturi eaque perspiciatis labore at quae beatae ad impedit a, soluta eveniet necessitatibus aliquid nobis commodi quidem nihil fugiat blanditiis sapiente. Vero, laudantium non?</span></p>
+    </div> 
+    <h3>Produtos</h3>
+    <div>
+    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellendus, magnam debitis provident qui blanditiis quis explicabo nihil alias nobis. Id perspiciatis cupiditate necessitatibus labore saepe porro. Nihil, tempore odit?</span><span>Ullam, dolorum quas. Voluptatem expedita vitae minus ipsa ad omnis eum saepe ex, eligendi atque sit, hic temporibus cum explicabo veritatis, molestias eos ab sapiente aperiam quos. Excepturi, eius et?</span><span>Animi atque temporibus sint magni nam iusto quia fuga repellendus veniam ipsum ab ex doloribus nobis aspernatur quasi consectetur libero, numquam hic reprehenderit esse. Iure placeat dignissimos facilis exercitationem ad.</span></p>
+    <p><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa recusandae qui facilis provident vero porro sit odit quidem, delectus assumenda doloribus tempora est ex earum, impedit deleniti! Soluta, voluptatem omnis!</span><span>Voluptatibus deserunt, maiores sunt tenetur culpa molestias officiis deleniti totam dolore ipsa harum perferendis sed dolores ut atque, officia maxime beatae voluptatum! Minus quisquam quidem, voluptatem error ducimus ex ipsa.</span><span>Id sed laboriosam laudantium error, ut excepturi eaque perspiciatis labore at quae beatae ad impedit a, soluta eveniet necessitatibus aliquid nobis commodi quidem nihil fugiat blanditiis sapiente. Vero, laudantium non?</span></p>
+</div>
+</div>
+
+    <div id="dialog" title="Caixa de mensagem">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quae hic nemo enim maiores nostrum cum soluta veniam, distinctio itaque vitae ipsa doloremque, ut ipsam esse quo? Fugit, ratione ipsa.</p>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script>
+        $(function(){
+            $("#imagem").resizable()
+            $("#imagem").draggable()
+        })
+    </script>
+    <script>
+        $(function(){
+            $("#dialog").dialog()
+        })
+    </script>
+    <script>
+        $(function(){
+            $("#menu").menu()
+        })
+    </script>
+    <script>
+        $(function(){
+            $("#caixa").accordion()
+        })
+    </script>
+</body>
+</html>
